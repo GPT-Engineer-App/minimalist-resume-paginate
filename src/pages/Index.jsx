@@ -1,17 +1,38 @@
-// Update this page (the content is just a fallback if you fail and example)
-// Use chakra-ui
-import { Container, Text, VStack } from "@chakra-ui/react";
-
-// Example of using react-icons
-// import { FaRocket } from "react-icons/fa";
-// <IconButton aria-label="Add" icon={<FaRocket />} size="lg" />; // IconButton would also have to be imported from chakra
+import { Container, Text, VStack, Heading, Box, SimpleGrid } from "@chakra-ui/react";
 
 const Index = () => {
   return (
-    <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-      <VStack spacing={4}>
-        <Text fontSize="2xl">Your Blank Canvas</Text>
-        <Text>Chat with the agent to start making edits.</Text>
+    <Container centerContent maxW="container.md" py={10}>
+      <VStack spacing={4} align="start">
+        <Heading as="h1" size="2xl">John Doe</Heading>
+        <Text fontSize="lg">Full Stack Developer</Text>
+        <Box>
+          <Heading as="h2" size="lg" mt={6} mb={4}>Experience</Heading>
+          <SimpleGrid columns={1} spacing={4}>
+            <Box>
+              <Heading as="h3" size="md">Company A</Heading>
+              <Text fontSize="sm">Role: Senior Developer</Text>
+              <Text fontSize="sm">Duration: Jan 2020 - Present</Text>
+              <Text fontSize="sm">Description: Worked on various projects...</Text>
+            </Box>
+            <Box>
+              <Heading as="h3" size="md">Company B</Heading>
+              <Text fontSize="sm">Role: Junior Developer</Text>
+              <Text fontSize="sm">Duration: Jan 2018 - Dec 2019</Text>
+              <Text fontSize="sm">Description: Assisted in developing...</Text>
+            </Box>
+          </SimpleGrid>
+        </Box>
+        <Box>
+          <Heading as="h2" size="lg" mt={6} mb={4}>Education</Heading>
+          <SimpleGrid columns={1} spacing={4}>
+            <Box>
+              <Heading as="h3" size="md">University X</Heading>
+              <Text fontSize="sm">Degree: B.Sc. in Computer Science</Text>
+              <Text fontSize="sm">Duration: 2014 - 2018</Text>
+            </Box>
+          </SimpleGrid>
+        </Box>
       </VStack>
     </Container>
   );
