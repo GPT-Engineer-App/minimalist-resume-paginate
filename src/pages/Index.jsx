@@ -1,4 +1,4 @@
-import { Container, Text, VStack, Heading, Box, SimpleGrid, Image, HStack, Link } from "@chakra-ui/react";
+import { Container, Text, VStack, Heading, Box, Image, HStack, Link } from "@chakra-ui/react";
 import { FaGithub, FaGit } from "react-icons/fa";
 
 const Index = () => {
