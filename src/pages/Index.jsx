@@ -3,7 +3,8 @@ import { FaGithub, FaGit } from "react-icons/fa";
 
 const Index = () => {
   return (
-    <Container centerContent maxW="container.md" py={10}>
+    <Box display="flex" alignItems="center" justifyContent="center" height="100vh">
+      <Container centerContent maxW="container.md" py={10}>
       <Box borderWidth="1px" borderRadius="lg" overflow="hidden" p={6} boxShadow="md" w="100%">
         <SimpleGrid columns={[1, null, 2]} spacing={10}>
           <VStack spacing={4} align="start">
@@ -43,6 +44,7 @@ const Index = () => {
         </SimpleGrid>
       </Box>
     </Container>
+    </Box>
   );
 };
 
