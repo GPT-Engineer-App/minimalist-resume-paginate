@@ -15,33 +15,6 @@ const Index = () => {
           />
           <Heading as="h1" size="2xl" textAlign="center" w="100%">John Doe</Heading>
           <Text fontSize="lg" textAlign="center" w="100%">Full Stack Developer</Text>
-          <Box w="100%">
-            <Heading as="h2" size="lg" mt={6} mb={4}>Experience</Heading>
-            <SimpleGrid columns={1} spacing={4}>
-              <Box>
-                <Heading as="h3" size="md">Company A</Heading>
-                <Text fontSize="sm">Role: Senior Developer</Text>
-                <Text fontSize="sm">Duration: Jan 2020 - Present</Text>
-                <Text fontSize="sm">Description: Worked on various projects...</Text>
-              </Box>
-              <Box>
-                <Heading as="h3" size="md">Company B</Heading>
-                <Text fontSize="sm">Role: Junior Developer</Text>
-                <Text fontSize="sm">Duration: Jan 2018 - Dec 2019</Text>
-                <Text fontSize="sm">Description: Assisted in developing...</Text>
-              </Box>
-            </SimpleGrid>
-          </Box>
-          <Box w="100%">
-            <Heading as="h2" size="lg" mt={6} mb={4}>Education</Heading>
-            <SimpleGrid columns={1} spacing={4}>
-              <Box>
-                <Heading as="h3" size="md">University X</Heading>
-                <Text fontSize="sm">Degree: B.Sc. in Computer Science</Text>
-                <Text fontSize="sm">Duration: 2014 - 2018</Text>
-              </Box>
-            </SimpleGrid>
-          </Box>
           <HStack spacing={4} alignSelf="center" mt={6}>
             <Link href="https://github.com" isExternal>
               <FaGithub size="24px" />
