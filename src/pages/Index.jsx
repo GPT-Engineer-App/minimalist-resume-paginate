@@ -3,10 +3,10 @@ import { FaGithub, FaGit } from "react-icons/fa";
 
 const Index = () => {
   return (
-    <Container centerContent maxW="container.md" py={10}>
-      <Box borderWidth="1px" borderRadius="lg" overflow="hidden" p={6} boxShadow="md" w="100%">
-        <SimpleGrid columns={[1, null, 2]} spacing={10}>
-          <VStack spacing={4} align="start">
+    <Container centerContent maxW="100vw" h="100vh" display="flex" justifyContent="center" alignItems="center">
+      <Box borderWidth="1px" borderRadius="lg" overflow="hidden" p={6} boxShadow="md" w="100%" h="100%">
+        <SimpleGrid columns={[1, null, 2]} spacing={10} h="100%">
+          <VStack spacing={4} align="start" h="100%">
             <Heading as="h2" size="lg">Programming Languages</Heading>
             <Box w="100%">
               <Text>JavaScript</Text>
@@ -21,7 +21,7 @@ const Index = () => {
               <Progress value={60} size="sm" colorScheme="teal" />
             </Box>
           </VStack>
-          <VStack spacing={4} align="start">
+          <VStack spacing={4} align="start" h="100%">
             <Image
               borderRadius="full"
               boxSize="150px"
