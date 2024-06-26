@@ -32,14 +32,16 @@ const Index = () => {
             />
             <Heading as="h1" size="2xl" textAlign="center" w="100%">John Doe</Heading>
             <Text fontSize="lg" textAlign="center" w="100%">Full Stack Developer</Text>
-            <HStack spacing={4} alignSelf="center" mt={6}>
-              <Link href="https://github.com" isExternal>
-                <FaGithub size="24px" />
-              </Link>
-              <Link href="https://gitee.com" isExternal>
-                <FaGit size="24px" />
-              </Link>
-            </HStack>
+            <Box display="flex" justifyContent="center" w="100%">
+                <HStack spacing={4} mt={6}>
+                  <Link href="https://github.com" isExternal>
+                    <FaGithub size="24px" />
+                  </Link>
+                  <Link href="https://gitee.com" isExternal>
+                    <FaGit size="24px" />
+                  </Link>
+                </HStack>
+              </Box>
           </VStack>
         </SimpleGrid>
       </Box>
